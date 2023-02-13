@@ -1,0 +1,125 @@
+/* CSS - Cascading Style Sheets */
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins&display=swap');
+
+/* wildcard / coringa */
+
+body {
+    background-color: #180C23;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+
+.title {
+    color: #0BFFC0;
+    font-family: 'Open Sans', sans-serif;
+    width: 30rem;
+    font-size: 2em;
+    font-weight: 500;
+    margin: 2em 1.25em;
+    line-height: 2rem;
+    top: 9rem;
+    right: 1rem;
+
+    position: relative;
+    display: inline-block;
+}
+
+/*
+    margin: 3em; todos os lados
+    margin: 3em 2em; top bottom | left right 
+    margin: 3em 1em 2em; top | left right | bottom 
+    margin: 3em 1em 2em 4em ; top | right | bottom | left 
+    */
+
+.form {
+    background-color: #2F1E40;
+    margin: 0 auto 1.5rem;
+    max-width: 360px;
+    width: 238px;
+    border-radius: 1em;
+    padding: 2rem;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 3px 17px -1px rgba(21, 10, 33, 1);
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #4FE49B;
+}
+
+.form-label {
+    display: block;
+    color: #9D9AB5;
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: #56456B;
+    border: 0;
+    box-shadow: 0px 3px 17px -1px rgba(33, 16, 52, 1);
+    box-sizing: border-box;
+}
+
+/* ::pseudo element */
+.form-input::placeholder {
+    padding-left: 0.5rem;
+    opacity: 35;
+    color: #9D8EB2;
+}
+
+.form-button {
+    background-color: #00F475;
+    color: #002322;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: 0;
+}
+
+/* :pseudo-selector */
+.form-button:hover {
+    box-shadow: 0px 3px 32px -1px rgba(78, 48, 199, 1);
+}
+
+.img-space {
+    display: none;
+}
+
+@media screen and (min-width: 960px) {
+    .img-space {
+        height: 20rem;
+        width: 20rem;
+
+        right: 35rem;
+        top: 10rem;
+        position: relative;
+        display: inline-block;
+    }
+
+    .form {
+        display: inline-block;
+        margin-left: 35rem;
+        bottom: 18rem;
+
+        position: relative;
+    }
+
+    .title {
+        top: -10rem;
+        margin-top: 5rem;
+        margin-left: 5rem;
+    }
+
+    
+}
